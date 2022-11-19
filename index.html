@@ -27,9 +27,20 @@
                     <img src="images/Logo.png" height="80px" alt="">
                 </div>
                 <div class="col-md-auto col-xs-2 mx-5 icons">
-                    <i class="bi bi-person-fill-lock"></i>
-                    <i class="bi bi-cart-plus-fill"></i>
-                    <i class="bi bi-search"></i>
+                    <span onmouseover="lhvr()" onmouseout="lhvro()">
+                        <i class="bi bi-person-fill-lock active"></i>
+                        <i class="hlogin hidden">Login</i>
+                    </span>
+                    <span onmouseover="chvr()" onmouseout="chvro()">
+                        <i class="bi bi-cart-plus-fill active"></i>
+                        <i class="hcart hidden">Cart</i>
+                    </span>
+                    <span onmouseover="shvr()" onmouseleave="shvro()">
+                        <i class="bi bi-search active"></i>
+                        <input class="hsearch hidden" placeholder="search">
+                    </span>
+                    
+                    
                 </div>
                 <div class="col-md-auto col-xs-2">
                     <div id="mySidebar" class="sidebar">

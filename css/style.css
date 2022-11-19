@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Lobster&family=Poppins:ital,wght@0,600;0,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+*{
+    transition: all 0.5s;
+}
 
 body {
     overflow-x: hidden;
@@ -96,10 +99,37 @@ body {
     margin-left: 15px;
 }
 
-.icons>i {
+.icons i {
     font-size: 23px;
     color: #222;
     padding: 0 15px;
+}
+
+.hlogin,
+.hcart,
+.hsearch{
+    font-family: 'Poppins' !important;
+    font-size: 15px !important;
+    color: #399 !important;
+    font-style: normal !important;
+}
+
+.active{
+    display: inline;
+    animation: animup 0.5s ease-in-out;
+}
+
+@keyframes animup{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden{
+    display: none;
 }
 
 .banner {
@@ -322,6 +352,12 @@ body {
     color: #399;
     font-weight: 700;
     border-radius: 10px;
+    border: 1px solid #fff;
+}
+.instruct-write>a:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
 }
 .instruct-img{
     background-image: url(../images/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).png);
@@ -372,6 +408,12 @@ body {
     font-weight: 700;
     color: #fff;
     border-radius: 10px;
+    border: 1px solid #399;
+}
+.experience-write>a:hover{
+    border: 1px solid #399;
+    color: #399;
+    background-color: transparent;
 }
 
 .pricing-cf{
@@ -478,7 +520,7 @@ body {
     font-weight: normal;
     width: 40%;
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     font-size: 30px;
 }
 .trainer-cf>p{
