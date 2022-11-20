@@ -89,3 +89,54 @@ $(document).ready(function () {
   });
 });
 
+
+var count1 = document.getElementById("counter1");
+var count2 = document.getElementById("counter2");
+var count3 = document.getElementById("counter3");
+var counts1,counts2,counts3;
+var counted1 = 0,counted2 = 0,counted3 = 0;
+let upto1 = 0, upto2 = 0, upto3 = 0;
+
+window.addEventListener('scroll', checkPosition);
+
+function checkPosition() {
+  var positionFromTop = count1.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  if (positionFromTop - windowHeight <= 0 && counted1 === 0) {
+    counts1 = setInterval(updated1, 10);
+    counted1 = 1;
+  }
+
+  positionFromTop = count2.getBoundingClientRect().top;
+  if (positionFromTop - windowHeight <= 0 && counted2 === 0) {
+    counts2 = setInterval(updated2, 10);
+    counted2 = 1;
+  }
+
+  positionFromTop = count3.getBoundingClientRect().top;
+  if (positionFromTop - windowHeight <= 0 && counted3 === 0) {
+    counts3 = setInterval(updated3, 10);
+    counted3 = 1;
+  }
+}
+
+function updated1() {
+  count1.innerHTML = ++upto1;
+  if (upto1 === 123) {
+    clearInterval(counts1);
+  }
+}
+
+function updated2() {
+  count2.innerHTML = ++upto2;
+  if (upto2 === 123) {
+    clearInterval(counts2);
+  }
+}
+
+function updated3() {
+  count3.innerHTML = ++upto3;
+  if (upto3 === 123) {
+    clearInterval(counts3);
+  }
+}

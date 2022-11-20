@@ -206,10 +206,12 @@ body {
     font-size: 18px;
     transition: 0.3s;
     border-radius: 15px;
+    transform: rotateY(0deg);
 }
 
 .ban-write>a:hover {
     background-color: rgb(1, 180, 156);
+    transform: rotateY(360deg);
 }
 
 .class-cf {
