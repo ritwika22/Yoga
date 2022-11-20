@@ -8,7 +8,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
-function lhvr(){
+function lhvr() {
   document.querySelector('.bi-person-fill-lock').classList.remove("active");
   document.querySelector('.bi-person-fill-lock').classList.add("hidden");
 
@@ -16,7 +16,7 @@ function lhvr(){
   document.querySelector('.hlogin').classList.add("active");
 }
 
-function lhvro(){
+function lhvro() {
   document.querySelector('.bi-person-fill-lock').classList.add("active");
   document.querySelector('.bi-person-fill-lock').classList.remove("hidden");
 
@@ -24,7 +24,7 @@ function lhvro(){
   document.querySelector('.hlogin').classList.remove("active");
 }
 
-function chvr(){
+function chvr() {
   document.querySelector('.bi-cart-plus-fill').classList.remove("active");
   document.querySelector('.bi-cart-plus-fill').classList.add("hidden");
 
@@ -32,7 +32,7 @@ function chvr(){
   document.querySelector('.hcart').classList.add("active");
 }
 
-function chvro(){
+function chvro() {
   document.querySelector('.bi-cart-plus-fill').classList.add("active");
   document.querySelector('.bi-cart-plus-fill').classList.remove("hidden");
 
@@ -40,7 +40,7 @@ function chvro(){
   document.querySelector('.hcart').classList.remove("active");
 }
 
-function shvr(){
+function shvr() {
   document.querySelector('.bi-search').classList.remove("active");
   document.querySelector('.bi-search').classList.add("hidden");
 
@@ -48,7 +48,7 @@ function shvr(){
   document.querySelector('.hsearch').classList.add("active");
 }
 
-function shvro(){
+function shvro() {
   document.querySelector('.bi-search').classList.add("active");
   document.querySelector('.bi-search').classList.remove("hidden")
 
@@ -56,10 +56,21 @@ function shvro(){
   document.querySelector('.hsearch').classList.remove("active");
 }
 
-function rotateimg(e){
-  e.classList.add("bg-rotate");
+function rotateimg(e) {
+  document.querySelector(e).classList.add("bg-rotate");
 }
 
-function stopimg(e){
-  e.classList.remove("bg-rotate");
+function stopimg(e) {
+  document.querySelector(e).classList.remove("bg-rotate");
 }
+
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    items: 3,
+  });
+});
+

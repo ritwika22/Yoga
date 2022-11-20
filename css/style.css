@@ -136,7 +136,11 @@ body {
     padding: 40px 100px;
 }
 
-.ban-bg>img {
+.ban-img{
+    position: relative;
+}
+
+.ban-img>img {
     border-radius: 50%;
     border: 2px solid #399;
     position: absolute;
@@ -151,25 +155,28 @@ body {
     background-size: cover;
     height: 550px;
     width: 550px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 1s;
 }
 
 .bg-rotate{
-    animation: rotate-clk 3s linear infinite;
+    animation: rotate-clk 10s linear infinite;
 }
 
 @keyframes rotate-clk {
     from{
-        transform: rotate(0);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
     to{
-        transform: rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
 .ban-write {
-    padding-top: 80px;
+    padding: 100px 0;
 }
 
 .ban-write>h1 {
@@ -240,7 +247,7 @@ body {
 
 .shape>img {
     height: 220px;
-    width: 220px;
+    width: 220px !important;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -630,4 +637,20 @@ input[type=email]::placeholder{
 }
 .sm-list>li{
     width: fit-content;
+}
+
+.owl-nav > .owl-prev > span{
+    visibility: hidden;
+}
+
+.owl-nav > .owl-prev > span::after{
+    content: "<--";
+    display: inline;
+    position: relative;
+    visibility: visible;
+}
+
+.owl-nav > .owl-next > span{
+    content: "-->";
+
 }
