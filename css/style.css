@@ -152,6 +152,20 @@ body {
     height: 550px;
     width: 550px;
     position: relative;
+    transition: all 1s;
+}
+
+.bg-rotate{
+    animation: rotate-clk 3s linear infinite;
+}
+
+@keyframes rotate-clk {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .ban-write {
