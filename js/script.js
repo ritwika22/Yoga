@@ -1,6 +1,13 @@
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  var windowWidth = window.innerWidth;
+
+  if(windowWidth > 430){
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  else{
+    document.getElementById("mySidebar").style.width = (windowWidth+"px");
+  }
 }
 
 function closeNav() {
@@ -56,12 +63,12 @@ function shvro() {
   document.querySelector('.hsearch').classList.remove("active");
 }
 
-function rotateimg(e) {
-  document.querySelector(e).classList.add("bg-rotate");
+function rotateimg(e, c) {
+  document.querySelector(e).classList.add(c);
 }
 
-function stopimg(e) {
-  document.querySelector(e).classList.remove("bg-rotate");
+function stopimg(e, c) {
+  document.querySelector(e).classList.remove(c);
 }
 
 var owl = $('.owl-carousel');
@@ -78,8 +85,8 @@ $(document).ready(function () {
         items: 1,
       },
       // breakpoint from 480 up
-      430: {
-        items: 1,
+      480: {
+        items: 2,
       },
       // breakpoint from 768 up
       768: {

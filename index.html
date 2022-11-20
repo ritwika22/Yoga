@@ -30,7 +30,7 @@
     <header>
         <div class="container-fluid header-cf">
             <div class="row header-row">
-                <div class="col-auto  me-auto logo">
+                <div class="col-auto  me-md-auto logo">
                     <img src="images/Logo.png" height="80px" alt="">
                 </div>
                 <div class="col-auto  mx-md-5 icons">
@@ -49,7 +49,7 @@
 
 
                 </div>
-                <div class="col-auto ">
+                <div class="col-auto">
                     <div id="mySidebar" class="sidebar">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                         <a href="#">HOME</a>
@@ -70,10 +70,11 @@
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-12 col-md-6 ban-img">
-                    <div class="ban-bg" onmouseover="rotateimg('.ban-bg')" onmouseleave="stopimg('.ban-bg')">
+                    <div class="ban-bg" onmouseover="rotateimg('.ban-bg', 'bg-rotate')"
+                        onmouseleave="stopimg('.ban-bg', 'bg-rotate')">
                     </div>
                     <img src="https://source.unsplash.com/random/350x350/?yoga,exercise" alt=""
-                        onmouseover="rotateimg('.ban-bg')" onmouseleave="stopimg('.ban-bg')">
+                        onmouseover="rotateimg('.ban-bg', 'bg-rotate')" onmouseleave="stopimg('.ban-bg', 'bg-rotate')">
                 </div>
                 <div class="col-12 col-md-6 ban-write">
                     <h1>YOGA CLASS</h1>
@@ -96,35 +97,35 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti eos quasi natus, hic, tempore.</p>
             <div class="row class-row owl-carousel">
                 <div class="col class-col">
-                    <div class="shape mx-auto" onmouseover="rotateimg(this)" onmouseleave="stopimg(this)">
+                    <div class="shape mx-auto">
                         <img src="images/patrick-malleret-p-v1DBkTrgo-unsplash.jpg" alt="">
                     </div>
                     <h3>NEWBIE CLASS</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="col class-col">
-                    <div class="shape mx-auto" onmouseover="rotateimg(this)" onmouseleave="stopimg(this)">
+                    <div class="shape mx-auto">
                         <img src="images/erik-brolin-wmZNEGkcsmw-unsplash.jpg" alt="">
                     </div>
                     <h3>ADVANCED CLASS</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="col class-col">
-                    <div class="shape mx-auto" onmouseover="rotateimg(this)" onmouseleave="stopimg(this)">
+                    <div class="shape mx-auto">
                         <img src="images/sonnie-hiles-rX8gBeg2WM0-unsplash.jpg" alt="">
                     </div>
                     <h3>EXPERT CLASS</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="col class-col">
-                    <div class="shape mx-auto" onmouseover="rotateimg(this)" onmouseleave="stopimg(this)">
+                    <div class="shape mx-auto">
                         <img src="images/sonnie-hiles-rX8gBeg2WM0-unsplash.jpg" alt="">
                     </div>
                     <h3>EXPERT CLASS C</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="col class-col">
-                    <div class="shape mx-auto" onmouseover="rotateimg(this)" onmouseleave="stopimg(this)">
+                    <div class="shape mx-auto">
                         <img src="images/sonnie-hiles-rX8gBeg2WM0-unsplash.jpg" alt="">
                     </div>
                     <h3>EXPERT CLASS D</h3>
@@ -136,7 +137,7 @@
         <div class="container-fluid stat-cf">
             <h3>OUR STATS</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti eos quasi natus, hic, tempore.</p>
-            <div class="row stat-row">
+            <div class="row g-5 stat-row">
                 <div class="col-12 col-md-4">
                     <div class="circle mx-auto">
                         <h5 id="counter1"></h5>
@@ -160,13 +161,13 @@
 
         <div class="container-fluid instruct-cf">
             <div class="row">
-                <div class="col-5 ms-auto instruct-write">
+                <div class="col-12 col-md-5 ms-auto instruct-write">
                     <h3>BEST <br> INSTRUCTOR</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos repellendus dicta quam,
                         vero nulla voluptatibus.</p>
                     <a href="">READ MORE</a>
                 </div>
-                <div class="col-5 me-auto instruct-img">
+                <div class="col-12 col-md-5 me-auto instruct-img">
                     <!-- <img src="images/Place Your Image Here (Double Click to Edit).png" alt=""> -->
                 </div>
             </div>
@@ -174,8 +175,8 @@
 
         <div class="container-fluid experience-cf">
             <div class="row">
-                <div class="col-5 ms-auto experience-img"></div>
-                <div class="col-5 me-auto experience-write">
+                <div class="col-12 col-md-5 order-1 order-md-0 ms-auto experience-img"></div>
+                <div class="col-12 col-md-5 order-0 order-md-1 me-auto experience-write">
                     <h3>NEW <br> EXPERIENCE</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos repellendus dicta quam,
                         vero nulla voluptatibus.</p>
@@ -188,19 +189,19 @@
             <h3>PRICING</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti eos quasi natus, hic, tempore.</p>
             <div class="row pricing-row">
-                <div class="col-3 pricing-col">
+                <div class="col-12 col-md-3 pricing-col">
                     <h4>NEWBIE CLASS <br> $70.00</h4>
                     <img src="images/Vector Smart Object.png" alt="">
                     <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
                     <a href="">REGISTER NOW</a>
                 </div>
-                <div class="col-3 pricing-col">
+                <div class="col-12 col-md-3 pricing-col">
                     <h4>ADVANCED CLASS <br> $120.00</h4>
                     <img src="images/Vector Smart Object.png" alt="">
                     <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
                     <a href="">REGISTER NOW</a>
                 </div>
-                <div class="col-3 pricing-col">
+                <div class="col-12 col-md-3 pricing-col">
                     <h4>EXPERT CLASS <br> $200.00</h4>
                     <img src="images/Vector Smart Object.png" alt="">
                     <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.</p>
@@ -210,7 +211,10 @@
         </div>
 
         <div class=" trainer-cf">
-            <div class="design" onmouseover="rotateimg(this)" onmouseleave="stopimg(this)">
+            <div class="design-p" onmouseover="rotateimg('.design', 'bg-rotate-wt')"
+                onmouseleave="stopimg('.design', 'bg-rotate-wt')">
+                <div class="design">
+                </div>
                 <img src="images/ave-calvar-opxOfzge2Tg-unsplash.jpg.png" alt="">
             </div>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
@@ -235,13 +239,13 @@
     <footer>
         <div class="container-fluid footer-cf">
             <div class="row footer-row">
-                <div class="col-3 footer-col">
+                <div class=" col-12 col-md-3 footer-col pb-3">
                     <h5>Title Here</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eligendi, nobis id dicta, tenetur
                         ab cum fugiat laborum esse rem vel dolor vero cupiditate! Explicabo maiores autem voluptas
                         voluptatum atque?</p>
                 </div>
-                <div class="col-3 footer-col">
+                <div class=" col-4 col-md-3 footer-col">
                     <h5>About</h5>
                     <ul class="about-list">
                         <li><a href="">History</a></li>
@@ -251,7 +255,7 @@
                         <li><a href="">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-3 footer-col">
+                <div class=" col-4 col-md-3 footer-col">
                     <h5>Services</h5>
                     <ul class="about-list">
                         <li><a href="">How to Order</a></li>
@@ -261,7 +265,7 @@
                         <li><a href="">Payment Method</a></li>
                     </ul>
                 </div>
-                <div class="col-3 footer-col">
+                <div class=" col-4 col-md-3 footer-col">
                     <h5>Follow</h5>
                     <ul class="about-list sm-list">
                         <li><a href=""> <i class="fab fa-facebook"></i> Facebook</a></li>
