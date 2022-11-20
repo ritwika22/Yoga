@@ -152,7 +152,8 @@ body {
 .ban-bg {
     background-image: url(../images/Shape.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 550px;
     width: 550px;
     position: absolute;
@@ -253,6 +254,31 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.swiper-head{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.swiper-head>i{
+    font-size: 30px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.swiper-head>i:hover{
+    transform: scale(0.8);
+}
+
+.swiper-head>*{
+    display: block;
+    margin: 0;
 }
 
 .class-row {
@@ -579,13 +605,15 @@ body {
  input[type=email]{
     width: 70%;
     border-radius: 20px;
-    padding: 8px 7px;
+    padding: 8px 15px;
     border: none;
     outline: none;
+    caret-color: #399;
 } 
-input[type=email]::placeholder{
+/* input[type=email]::placeholder{
     padding-left: 7px;
-}
+} */
+
 .subs{
     display: inline-block;
     margin: 0 auto;
@@ -639,18 +667,40 @@ input[type=email]::placeholder{
     width: fit-content;
 }
 
-.owl-nav > .owl-prev > span{
-    visibility: hidden;
+@media(max-width:430px){
+    .banner{
+        padding: 40px;
+    }
+
+    .ban-bg{
+        height: inherit;
+        width: inherit;
+        animation: rotate-clk 10s linear infinite;
+    }
+
+    .ban-img>img{
+        width: 70%;
+    }
+
+    .ban-img{
+        height: 400px;
+        width: 100%;
+    }
+
+    .ban-write{
+        padding: 25px 0;
+    }
+
+    .swiper-head{
+        width: 90%;
+    }
+
+    .class-cf>p, .stat-cf>p{
+        width: 80%;
+    }
+
+    .class-cf{
+        margin-top: 0;
+    }
 }
 
-.owl-nav > .owl-prev > span::after{
-    content: "<--";
-    display: inline;
-    position: relative;
-    visibility: visible;
-}
-
-.owl-nav > .owl-next > span{
-    content: "-->";
-
-}

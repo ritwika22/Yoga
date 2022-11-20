@@ -21,7 +21,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="owlcarousel/owl.carousel.min.js"></script>
 </head>
 
@@ -29,10 +30,10 @@
     <header>
         <div class="container-fluid header-cf">
             <div class="row header-row">
-                <div class="col-md-auto col-xs-2 me-auto logo">
+                <div class="col-auto  me-auto logo">
                     <img src="images/Logo.png" height="80px" alt="">
                 </div>
-                <div class="col-md-auto col-xs-2 mx-5 icons">
+                <div class="col-auto  mx-md-5 icons">
                     <span onmouseover="lhvr()" onmouseout="lhvro()">
                         <i class="bi bi-person-fill-lock active"></i>
                         <i class="hlogin hidden">Login</i>
@@ -48,7 +49,7 @@
 
 
                 </div>
-                <div class="col-md-auto col-xs-2">
+                <div class="col-auto ">
                     <div id="mySidebar" class="sidebar">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                         <a href="#">HOME</a>
@@ -68,13 +69,13 @@
     <section class="banner">
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-6 ban-img">
+                <div class="col-12 col-md-6 ban-img">
                     <div class="ban-bg" onmouseover="rotateimg('.ban-bg')" onmouseleave="stopimg('.ban-bg')">
                     </div>
                     <img src="https://source.unsplash.com/random/350x350/?yoga,exercise" alt=""
                         onmouseover="rotateimg('.ban-bg')" onmouseleave="stopimg('.ban-bg')">
                 </div>
-                <div class="col-6 ban-write">
+                <div class="col-12 col-md-6 ban-write">
                     <h1>YOGA CLASS</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quod, fugit omnis blanditiis sed
                         eveniet iure amet, exercitationem nisi suscipit reiciendis beatae vero! Recusandae quam unde,
@@ -87,7 +88,11 @@
 
     <section class="body">
         <div class="container-fluid class-cf">
-            <h3>CHOOSE CLASS</h3>
+            <div class="swiper-head">
+                <i class="bi bi-arrow-left-circle" onclick="owl.trigger('next.owl.carousel')"></i>
+                <h3>CHOOSE CLASS</h3>
+                <i class="bi bi-arrow-right-circle" onclick="owl.trigger('prev.owl.carousel')"></i>
+            </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti eos quasi natus, hic, tempore.</p>
             <div class="row class-row owl-carousel">
                 <div class="col class-col">
@@ -132,19 +137,19 @@
             <h3>OUR STATS</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti eos quasi natus, hic, tempore.</p>
             <div class="row stat-row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="circle mx-auto">
                         <h5>123</h5>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="circle mx-auto">
                         <h5>123</h5>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="circle mx-auto">
                         <h5>123</h5>
                         <p>Lorem ipsum dolor sit amet</p>

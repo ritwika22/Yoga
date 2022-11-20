@@ -64,13 +64,28 @@ function stopimg(e) {
   document.querySelector(e).classList.remove("bg-rotate");
 }
 
+var owl = $('.owl-carousel');
+
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     dots: false,
-    items: 3,
+    responsive: {
+      // breakpoint from 0 up
+      0: {
+        items: 1,
+      },
+      // breakpoint from 480 up
+      430: {
+        items: 1,
+      },
+      // breakpoint from 768 up
+      768: {
+        items: 3,
+      }
+    }
   });
 });
 
